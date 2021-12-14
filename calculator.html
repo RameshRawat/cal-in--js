@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+       function backspace(){
+            var del = document.form.answer.value;
+            document.form.answer.value = del.substring(0,del.length-1);
+        }
+    </script>
+
+	<style>
+	#clear{
+		width: 80px;
+		color:yellow;
+	}
+	.hv:hover{
+		background-color :blue;
+	}
+	.formstyle{
+		width: 140px;
+		height: 270px;
+		margin:auto;
+		margin-top: 20px;
+		border: 2px solid blue;
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: 1px 2px 3px 4px red;
+	}
+	input{
+		width:42px;
+		color:white;
+		background-color: red;
+	}
+	#answerstyle{
+		width: 130px;
+		color: black;
+	}
+	.cc{
+		color: red;
+		text-shadow: 1px 1px 2px red;
+	}
+	body{
+		background-color: #faebd7;
+	}
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<center style="font-size:30px" class="cc">SIMPLE CALCULATOR USING JAVASCRIPT,HTML AND CSS</center>
+<div class="formstyle">
+	<form name="form"> 
+	<input type="text" name="answer" id="answerstyle"><br></br>
+
+	<input type="button" value="1" onclick="form.answer.value += '1' " class="hv">	
+	<input type="button" value="2" onclick="form.answer.value +='2' " class="hv">
+	<input type="button" value="3" onclick="form.answer.value+='3'" class="hv">
+	<br></br>
+		
+	<input type="button" value="4" onclick="form.answer.value += '4' " class="hv">	
+	<input type="button" value="5" onclick="form.answer.value +='5' " class="hv">
+	<input type="button" value="6" onclick="form.answer.value+='6'" class="hv">
+		<br></br>
+	<input type="button" value="7" onclick="form.answer.value += '7' " class="hv">	
+	<input type="button" value="8" onclick="form.answer.value +='8' " class="hv">
+	<input type="button" value="9" onclick="form.answer.value+='9'" class="hv">
+		<br></br>
+	<input type="button" value="+" onclick="form.answer.value += '+' " class="hv">	
+	<input type="button" value="-" onclick="form.answer.value +='-' " class="hv">
+	<input type="button" value="*" onclick="form.answer.value+='*'" class="hv">
+		<br></br>
+	<input type="button" value="/" onclick="form.answer.value += '/' " class="hv">	
+	<input type="button" value="0" onclick="form.answer.value +='0' " class="hv">
+	<input type="button" value="=" onclick="form.answer.value = eval(form.answer.value)" class="hv">
+	<br></br>
+	<input type="button" value = "B" onclick="backspace()" class="hv"> 
+
+	<input type="button" value ="Clear All" onclick="form.answer.value='' " id="clear" class="hv">
+
+						
+	</form>	
+	
+</div>	
+
+</body>
+</html>
+
